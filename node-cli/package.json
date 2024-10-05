@@ -1,0 +1,16 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "scripts": {
+    "dev": "node ./index.js",
+    "test": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT",
+  "bin": {
+    "hello-world": "./index.js"
+  }
+}
