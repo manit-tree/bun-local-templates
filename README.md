@@ -12,7 +12,7 @@ Local templates for Bun
 
 ![image](https://github.com/user-attachments/assets/8fd9cb53-209d-441f-a1b7-2566dbbf4685)
 
-3. Supported Templates
+## Supported Templates
 
 - bun-app
 - bun-module
