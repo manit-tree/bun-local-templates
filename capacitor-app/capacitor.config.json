@@ -1,0 +1,10 @@
+{
+  "appId": "com.myapps.melburn",
+  "appName": "melburn",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

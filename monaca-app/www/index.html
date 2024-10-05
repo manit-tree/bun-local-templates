@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="cordova.js"></script>
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<body>
+    <main>  
+        <div data-role="placeholder">
+            <img id="photo" />
+        </div>
+        <div class="flex-row">
+            <a href="#" data-cmd="take-photo">take photo</a>
+            <a href="#" data-cmd="scan-barcode">scan barcode</a>
+        </div>
+    </main>
+    <script>
+        function take_photo() {
+            const option = {
+                destinationType: Camera.DestinationType.DATA_URL,   // Convert to URL
+                correctOrientation: true 
+            };
+            
+            // Launch the camera
+            navigator.camera.getPicture(onSuccess, onError, option);
+
+            // Callback function called on success
+            function onSuccess(data) {
+                document.querySelector("#photo").src = "data:image/jpeg;base64," + data;
+            }
+            
+            // Callback function called on failure
+            function onError(message) {
+                alert("Error:" + message);
+            }
+        }
+
+        function scan_barcode() {
+            return new Promise((res, rej) => {
+                const option = {
+                    "oneShot": true,
+                    "timeoutPrompt": {
+                        "show": true,
+                        "timeout": 5,
+                        "prompt": "Not detected"
+                    }
+                }
+                // Barcode scanner activation
+                
+                monaca.BarcodeScanner.scan(res, rej, option);
+            });
+        }
+
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log("Monaca is ready!");
+
+            document.addEventListener('click', evt => {
+                let el = evt.target;
+
+                if (el.matches('a[data-cmd]')) {
+                    let cmd = el.getAttribute('data-cmd');
+
+                    if (cmd == 'take-photo') {
+                        take_photo();
+                    } else if (cmd == 'scan-barcode') {
+                        scan_barcode().then(data => {
+                            console.log(JSON.stringify(data));
+                        })
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

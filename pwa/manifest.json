@@ -1,0 +1,16 @@
+{
+  "id":"hello-world",
+  "name": "Hello World",
+  "short_name": "Hello",
+  "description": "A starting template for progressive web app",
+  "start_url" : "./index.html",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any"
+    }
+  ],
+  "theme_color":"#222222",
+  "background_color":"#333333",
+  "display": "standalone"
+}

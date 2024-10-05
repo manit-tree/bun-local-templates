@@ -1,0 +1,33 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: roboto,sans-serif;
+	font-size: 18px;
+	line-height: 1.4em;
+}
+
+
+#app {
+	max-width: min(640px, 85vw);
+	margin: 40px auto;
+
+	& > * {
+		margin-bottom: 30px;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}	
+
+	h1 {
+		text-align: center;
+	}
+}

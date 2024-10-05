@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --outline-color: #ccc;
+}
+
+#app {
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+#app > * {
+    margin-bottom: 1em;
+}
+
+#app > *:last-child {
+    margin-bottom: 0;
+}
+
+[data-role="placeholder"] {
+    aspect-ratio: 1;
+    width: 440px;
+    max-width: 100%;
+    outline: 1px solid var(--outline-color);
+    position: relative;
+    margin-bottom: 1em;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
