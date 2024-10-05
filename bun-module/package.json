@@ -1,0 +1,20 @@
+{
+  "name": "bun-module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<user-name>/<repo-name>"
+  },
+  "main": "./dist/index.min.js",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun ./src/index.ts",
+    "build": "bun build --target=node ./src/index.ts --outfile=./dist/index.min.js --minify",
+    "test": "bun ./demo/index.ts"
+  },
+  "type": "module"
+}
