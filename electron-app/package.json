@@ -1,5 +1,6 @@
 {
-  "name": "86",
+  "name": "electron-app",
+  "description":"Starting template for develop Electron Application",
   "main": "main.js",
   "devDependencies": {
     "@types/bun": "latest",
