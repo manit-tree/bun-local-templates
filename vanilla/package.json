@@ -1,9 +1,9 @@
 {
-  "name": "vanilla-app",
+  "name": "vanilla",
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev":"live-server"
+    "dev": "live-server"
   },
   "devDependencies": {
     "@types/bun": "latest"
