@@ -19,6 +19,7 @@ Local templates for Bun
 - capacitor-app
 - cordova-app
 - monaca-app
+- electron-app
 - node-cli
 - pwa
 - vanilla

@@ -1,0 +1,15 @@
+{
+  "name": "86",
+  "main": "main.js",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "electron": "^32.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "type": "module"
+}
