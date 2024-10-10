@@ -1,0 +1,17 @@
+{
+  "name": "vite-module",
+  "version": "1.0.0",
+  "description": "A starting template for develop module using Vite",
+  "main": "index.html",
+  "scripts": {
+    "build": "vite build --config vite.config.mjs && vite build --config vite.config.min.mjs",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lightningcss": "^1.25.1",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
+  }
+}
