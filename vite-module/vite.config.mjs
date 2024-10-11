@@ -3,20 +3,20 @@ import { defineConfig } from 'vite';
 import fs from 'fs';
 
 export default defineConfig({
-    plugins: [cssInjectedByJsPlugin()],
+    // plugins: [cssInjectedByJsPlugin()],
     css: {
         transformer: 'lightningcss',
     },
     build: {
-        outDir: './dist/teriyaki',
+        outDir: './dist/dog',
         minify: false,
         sourcemap: false,
         emptyOutDir: true,   
 
         lib: {
-            entry: './modules/teriyaki/index.js',
+            entry: './modules/dog/index.ts',
             name:'$',
-            formats: ['iife','umd','es'],
+            formats: ['iife','cjs','es'],
             fileName: (format) => `[name].[format].js`
         }
     },
