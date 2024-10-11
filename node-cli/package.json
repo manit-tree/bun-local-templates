@@ -1,16 +1,15 @@
 {
-  "name": "hello-world",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./index.js",
+  "name": "@8columns/hello-world",
+  "main": "./dist/index.es.min.js",
   "scripts": {
-    "dev": "node ./index.js",
-    "test": "node ./index.js"
+    "dev": "bun ./src/index.ts",
+    "build": "vite build --config vite.config.mjs && vite build --config vite.config.min.mjs"
   },
-  "keywords": [],
-  "author": "Mr.Manit Treeprapankit",
-  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "vite": "^5.4.8"
+  },
   "bin": {
-    "hello-world": "./index.js"
+    "hello-world": "./dist/index.es.min.js"
   }
 }
