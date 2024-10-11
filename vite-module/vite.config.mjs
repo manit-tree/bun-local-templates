@@ -1,5 +1,6 @@
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import fs from 'fs';
 
 export default defineConfig({
     plugins: [cssInjectedByJsPlugin()],

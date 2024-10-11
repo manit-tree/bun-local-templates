@@ -1,6 +1,7 @@
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
-import { defineConfig } from 'vite'
-import preact from '@preact/preset-vite'
+import { defineConfig } from 'vite';
+import preact from '@preact/preset-vite';
+import fs from 'fs';
 
 // https://vitejs.dev/config/
 export default defineConfig({
