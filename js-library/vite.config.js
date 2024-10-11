@@ -18,5 +18,11 @@ export default defineConfig({
             formats: ['iife'],
             fileName: (format) => `[name].js`
         }
+    },
+    server: {
+        https: {
+            key: fs.readFileSync(`./server.key`),
+            cert: fs.readFileSync(`./server.crt`)
+        }
     }
 })

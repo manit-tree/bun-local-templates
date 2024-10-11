@@ -1,9 +1,8 @@
 {
   "name": "vanilla",
   "module": "index.ts",
-  "type": "module",
   "scripts": {
-    "dev": "live-server"
+    "dev": "live-server --https=https.conf.js"
   },
   "devDependencies": {
     "@types/bun": "latest"

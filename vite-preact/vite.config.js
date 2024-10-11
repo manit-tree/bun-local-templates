@@ -26,5 +26,11 @@ export default defineConfig({
               assetFileNames: `assets/[name].[ext]`
           }
       }    
+    },
+    server: {
+        https: {
+            key: fs.readFileSync(`./server.key`),
+            cert: fs.readFileSync(`./server.crt`)
+        }
     }
 })
