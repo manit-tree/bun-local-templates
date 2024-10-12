@@ -25,6 +25,6 @@ export default defineConfig({
             key: fs.readFileSync(`./server.key`),
             cert: fs.readFileSync(`./server.crt`)
         },
-        open: './index.html'
+        open: './test/index.html'
     }
 })
