@@ -12,7 +12,6 @@ export default defineConfig({
         minify: false,
         sourcemap: false,
         emptyOutDir: true,   
-
         lib: {
             entry: './modules/dog/index.ts',
             name:'$',
