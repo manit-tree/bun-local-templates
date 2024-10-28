@@ -1,2 +1,3 @@
-$.ready(() => {
+document.addEventListener('DOMContentLoaded', () => {
+    
 })
