@@ -1,5 +1,6 @@
 {
-  "name": "87",
+  "name": "todos",
+  "description": "This is a simple todos app using svelte",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -9,11 +10,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "svelte": "^5.0.5",
-    "vite": "^5.4.8"
+    "vite": "^5.4.8",
+    "lightningcss": "^1.25.1",
+    "vite-plugin-css-injected-by-js": "^3.4.0"
   }
 }

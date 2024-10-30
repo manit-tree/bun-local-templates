@@ -1,20 +1,19 @@
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte()],
+  plugins: [
+    cssInjectedByJsPlugin(),
+    svelte()
+  ],
+  css: {
+    transformer: 'lightningcss',
+  },
   build: {
-        outDir: './dist',
-        minify: false,
-        sourcemap: false,
-        emptyOutDir: true,   
-
-        lib: {
-            entry: './src/App.svelte',
-            name:'App',
-            formats: ['iife','esm'],
-            fileName: (format) => `[name].[format].js`
-        }
-    },
+    outDir: './dist',
+    minify: true,
+    sourcemap: false,
+    emptyOutDir: true,   
+  }
 })
