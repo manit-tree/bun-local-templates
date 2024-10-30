@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+[data-role="toggle-theme"] {
+    display: grid;
+    place-content: center;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    svg {
+        pointer-events: none;
+    }
+}
+
+:root {
+    &.dark {
+        .show-on-dark {
+            display: inherit;
+        }
+
+        .hide-on-dark {
+            display: none;
+        }
+    }
+
+
+    &.light {
+        .show-on-light {
+            display: inherit;
+        }
+
+        .hide-on-light {
+            display: none;
+        }
+    }
+}
+
 #app {
     position: fixed;
     inset: 0;

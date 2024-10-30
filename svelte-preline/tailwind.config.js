@@ -3,7 +3,7 @@ module.exports = {
   mode: "jit",
   content: [
     "./index.html",
-    "./src/**/*.{html,js}"
+    "./src/**/*.{html,js,ts,svelte}"
   ],
   darkMode: 'selector',
   theme: {
