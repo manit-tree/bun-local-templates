@@ -1,0 +1,15 @@
+@layer rest {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        height: 100%;
+    }
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}

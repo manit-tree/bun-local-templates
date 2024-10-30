@@ -1,11 +1,11 @@
 const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   mode: "jit",
   content: [
     "./index.html",
-    "./src/**/*.{html,js}"
+    "./src/**/*.{html,js,jsx}"
   ],
   darkMode: 'selector',
   theme: {
@@ -25,7 +25,7 @@ module.exports = {
     }
   },
   plugins: [
-          require('preline/plugin')
-  ]
+    require('preline/plugin')
+  ],
 }
 

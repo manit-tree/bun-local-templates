@@ -24,22 +24,12 @@
     }    
 }
 
-@layer base-color {
-    :root {
-        --bg-color: #121212;
-        --text-color: #eee;
-        --primary: #15A6F0;
-    }
-}
-
 html, body {
     height: 100%;
 }
 
 #app {
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    font-family: sans-serif, tahoma;
+    font-family: poppins, sans-serif, tahoma;
     position: fixed;
     inset: 0;
     width: 100%;
