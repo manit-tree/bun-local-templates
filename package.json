@@ -1,0 +1,11 @@
+{
+  "name": "bun-local-templates",
+  "description": "Starting templates for local development",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "push": "git add . && git commit -m \"update\" && git push"
+  },
+  "author": "Mr.Manit Treeprapankit",
+  "license": "MIT"
+}
