@@ -1,8 +1,0 @@
-.dog {
-    display: grid;
-    place-content: center;
-
-    h1 {
-        color: red;
-    }
-}

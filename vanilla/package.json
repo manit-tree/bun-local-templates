@@ -1,13 +1,8 @@
 {
   "name": "vanilla",
-  "module": "index.ts",
+  "main": "index.html",
+  "type":"module",
   "scripts": {
-    "dev": "live-server --https=https.conf.js"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "dev": "live-server --https=https.conf.cjs"
   }
 }

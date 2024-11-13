@@ -1,17 +1,19 @@
 {
-  "name": "96",
+  "name": "My Module",
   "version": "1.0.0",
   "description": "A starting template for develop module using Vite",
   "main": "index.html",
+  "type":"module",
   "scripts": {
-    "build": "vite build --config vite.config.mjs",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "lightningcss": "^1.25.1",
+    "vite": "^5.4.1",
     "vite-plugin-css-injected-by-js": "^3.4.0"
   }
 }

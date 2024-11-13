@@ -3,20 +3,19 @@ import { defineConfig } from 'vite';
 import fs from 'fs';
 
 export default defineConfig({
-    // plugins: [cssInjectedByJsPlugin()],
+    plugins: [cssInjectedByJsPlugin()],
     css: {
         transformer: 'lightningcss',
     },
     build: {
-        outDir: './dist/dog',
-        minify: false,
-        sourcemap: false,
+        outDir: './dist',
+        minify: true,
+        sourcemap: true,
         emptyOutDir: true,   
         lib: {
-            entry: './modules/dog/index.ts',
-            name:'$',
-            formats: ['iife','cjs','es'],
-            fileName: (format) => `[name].[format].js`
+            entry: './src/index.js',
+            formats: ['es'],
+            fileName: (format) => `[name].js`
         }
     },
     server: {

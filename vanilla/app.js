@@ -1,3 +1,3 @@
-$.ready(() => {
-    console.log('app ready!');
+document.addEventListener('DOMContentLoaded', () => {
+    
 })
